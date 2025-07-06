@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/2287705188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conv.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="navigation">
+<a href="converter.html">Length</a>
+<a href="mass.html">Mass</a>
+<a href="Temp.html">Temperature</a>
+<a href="#">Speed</a>
+<a href="#">Time</a>
+
+    </div>
+
+ 
+    <form>
+        <h3>Temperature Converter</h3>
+        <input type="number" id="textBox1" value="0"><br>
+        <input type="radio" id="CtoF"name="conversionType">
+<label for="CtoF">Celsius➡️ Fahrenheit</label><br>
+
+<input type="radio" id="FtoC"name="conversionType">
+<label for="FtoC">Fahrenheit ➡️ Celsius</label><br>
+<button type="button" onclick="convertTemp()">Convert</button>
+<h4 id="result"></h4>
+    </form>
+<br>
+    <button type="button" onclick="homeLink()">Home</button>
+    <script src="index.js"></script>
+</body>
+</html>

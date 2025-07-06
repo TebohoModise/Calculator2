@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/2287705188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conv.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+      <div id="navigation">
+<a href="converter.html">Length</a>
+<a href="mass.html">Mass</a>
+<a href="Temp.html">Temperature</a>
+<a href="#">Speed</a>
+<a href="#">Time</a>
+
+    </div>
+
+ 
+    <form>
+        <h3>Mass Converter</h3>
+        <label for="textBox1">Enter value:</label>
+        <input type="number" id="textBox1" value="0" placeholder="Enter mass" title="Enter mass value"><br>
+        <input type="radio" id="KgToLb"name="conversionType">
+<label for="KgToLb">KiloGram ➡️ Pounds</label><br>
+
+<input type="radio" id="LbToKg"name="conversionType">
+<label for="LbToKg">Pounds ➡️ KiloGram</label><br>
+<button type="button" onclick="convertMass()">Convert</button>
+<h4 id="result"></h4>
+    </form>
+<br>
+    <button type="button" onclick="homeLink()">Home</button>
+    <script src="index.js"></script>
+</body>
+</html>

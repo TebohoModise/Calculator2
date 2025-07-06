@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://kit.fontawesome.com/2287705188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+<tr>
+  <td colspan="3">
+    <label for="inputbox" class="visually-hidden"></label>
+    <input type="text" id="inputbox" value="0" placeholder="Enter value" title="Calculator display" />
+  </td>
+  <td colspan="1" onclick="delBtnPressed()"><i class="fa-solid fa-delete-left"></i></td>
+</tr>
+
+             
+              <td class="ACButton"colspan="1" onclick="convBtnPressed()">Conv</td>     
+      <td class="ACButton" onclick="btnACPressed()">AC</td>  
+       <td class="operatorButton"onclick="btnSquarePressed()">(x)²</td>     
+       <td class="operatorButton" onclick="btnSqrtPressed()"><i class="fa-solid fa-square-root-variable"></i></td>      
+    </tr>
+         <tr>
+            <td class="digitButton" onclick="digitBtnPressed(7)">7</td>
+            <td class="digitButton" onclick="digitBtnPressed(8)">8</td>
+            <td class="digitButton" onclick="digitBtnPressed(9)">9</td>
+            <td class="operatorButton" onclick="oprBtnPressed('*')">x</td>
+        </tr>
+        <tr>
+           <td class="digitButton" onclick="digitBtnPressed(4)">4</td>
+           <td class="digitButton" onclick="digitBtnPressed(5)">5</td>
+           <td class="digitButton" onclick="digitBtnPressed(6)">6</td>
+           <td class="operatorButton" onclick="oprBtnPressed('-')">-</td>
+        </tr>
+
+         <tr>
+           <td class="digitButton" onclick="digitBtnPressed(1)">1</td>
+           <td class="digitButton" onclick="digitBtnPressed(2)">2</td>
+           <td class="digitButton" onclick="digitBtnPressed(3)">3</td>
+           <td class="operatorButton" onclick="oprBtnPressed('+')">+</td>
+        </tr>
+        <tr>
+            <td class="digitButton" colspan="1" onclick="digitBtnPressed(0)">0</td>
+            <td class="digitButton" onclick="digitBtnPressed('.')">.</td>
+<td class="operatorButton" onclick="btnEqualPressed()">=</td>
+            <td class="operatorButton" onclick="oprBtnPressed('/')"><i class="fa-solid fa-divide"></i></td>
+        </tr>
+  
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
